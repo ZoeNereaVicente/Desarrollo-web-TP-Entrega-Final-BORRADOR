@@ -1,0 +1,217 @@
+body{
+  font-family: sans-serif; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+}
+
+footer img {
+  max-height: 80px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+footer p {
+  text-align: center;
+  margin: auto;
+}
+
+.nav-links{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav{
+  display:flex;
+}
+
+nav ul{
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li{
+  list-style-type: none;
+}
+
+header a{
+  color: white;
+}
+
+footer a {
+  color: black;
+}
+
+img{
+  max-width: 120px;
+  height: auto;
+  margin-right: 1px;
+  order: -1;
+}
+
+h1{
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 30px;
+  color:#0077A5;
+}
+
+.carrito-btn {
+    background-color: white;
+    color: #004AAD;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.carrito-btn i {
+    font-size: 20px;
+}
+
+.carrito-btn span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #004AAD, #5DE0E6);
+  color: white;
+}
+
+.desktop-menu {
+  flex:1 ;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0px;
+  margin: 15px;
+}
+
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+@media (min-width: 769px) {
+    .mobile-menu{
+        display: none;
+    }
+
+    .menu-toggle{
+      display: none;
+    }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: auto;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  footer ul li {
+    width: auto;
+    text-align: center;
+    margin: 3px 0;
+  }
+
+  header{
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px 0;
+}
+
+.mobile-menu a {
+  color: #004AAD;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.desktop-menu {
+        display: none;
+  }
+}

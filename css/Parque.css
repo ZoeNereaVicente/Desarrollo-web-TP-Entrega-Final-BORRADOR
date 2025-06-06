@@ -1,0 +1,78 @@
+.Logo {
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+    display: inline;
+    margin: 0 1px;
+    transform: scaleX(1.1);
+}
+
+li{
+    font-weight: bold;
+}
+
+.Oasis-de-los-sueños{
+    background-image: url('../img/Oaisis\ de\ los\ sueños.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Reino-del-mañana{
+    background-image: url('../img/Reino\ del\ mañana.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Tierra-de-leyendas{
+    background-image: url('../img/Tierra\ de\ leyendas.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-d {
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 30px;
+    width: 35%;
+    height: 100%;
+    margin-left: auto;
+    line-height: 1.6;
+
+    h2{
+        color:#0077A5;
+        margin-top: 0;
+        margin-bottom: 300px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    p{
+        margin-bottom: 50px;
+    }
+}
+
+.contenedor-i {
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 30px;
+    width: 35%;
+    height: 100%;
+    margin-right: auto;
+    line-height: 1.6;
+
+    h2{
+        color: #007A33;
+        margin-top: 0;
+        margin-bottom: 300px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    p{
+        margin-bottom: 50px;
+    }
+}

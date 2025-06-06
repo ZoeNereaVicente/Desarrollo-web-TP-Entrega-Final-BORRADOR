@@ -1,0 +1,86 @@
+.Logo{
+    transform: scale(2);
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.Hotel-1 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.Hotel-2 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.Hotel-3 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.Hotel-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.Hotel-4 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.disney-suite{
+    transform: scale(4);
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.Suites{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+    h2{
+        padding: 25px;
+    }
+}
+
+.boton {
+    background-color: #0077a5;
+    color: white; 
+    font-size: 15px;
+    font-weight: bold; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+    text-align: center; 
+    display: block;    
+    margin: 30px auto;
+}
+
+.boton:hover {
+    background-color: #00357B;
+}
