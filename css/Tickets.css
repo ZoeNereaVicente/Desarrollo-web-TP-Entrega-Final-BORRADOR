@@ -1,3 +1,4 @@
+/*BOTON*/
 .boton {
     background-color: #0077a5;
     color: white; 
@@ -16,18 +17,20 @@
     background-color: #00357B;
 }
 
+/*MAIN*/
 main {
     padding: 40px;
 }
 
+/*DIV-TICKETS*/
 .contenedor-tickets {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.izquierda, .derecha {
-    flex: 1;
+.tickets {
+    margin-bottom: 40px;
 }
 
 .foto img {
@@ -36,16 +39,13 @@ main {
     margin-bottom: 10px;
 }
 
-.tickets {
-    margin-bottom: 40px;
+.izquierda, .derecha {
+    flex: 1;
 }
 
-.derecha img {
-    margin-left: auto; 
-    margin-right: 0;
-    display: block;
-    max-width: 350px;
-    margin-bottom: 20px;
+.izquierda {
+    padding-right: 20px;
+    border-right: 2px solid black;
 }
 
 .izquierda .foto img {
@@ -59,9 +59,18 @@ main {
     flex-direction: row-reverse;
 }
 
-.izquierda {
-    padding-right: 20px;
-    border-right: 2px solid black;
+.derecha > div:first-child img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.derecha img {
+    margin-left: auto; 
+    margin-right: 0;
+    display: block;
+    max-width: 350px;
+    margin-bottom: 20px;
 }
 
 .item-ticket {
@@ -93,15 +102,19 @@ main {
     margin: 0 0 10px 0;
 }
 
-.derecha > div:first-child img {
-    width: 400px;
-    height: auto;
-    display: block;
-}
-
 @media (max-width: 768px) {
-    .contenedor-tickets {
-        flex-direction: column;
+    /*DIV-TICKETS*/
+    .derecha {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      max-width: 100%;
+    }
+
+    .derecha > div:first-child img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
     }
 
     .izquierda {
@@ -111,10 +124,21 @@ main {
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
+    
+    .cancelacion-tickets {
+        text-align: center;
+        width: 100%;
+    }
 
-    .derecha {
-        padding-left: 0;
-        max-width: 100%;
+    .cancelacion-tickets h2,
+    .cancelacion-tickets h3,
+    .cancelacion-tickets p,
+    .cancelacion-tickets .boton {
+        text-align: center;
+    }
+
+    .contenedor-tickets {
+        flex-direction: column;
     }
 
     .item-ticket {
@@ -127,6 +151,7 @@ main {
         max-width: 100%;
     }
 
+    /*BOTON*/
     .boton {
         margin: 20px auto;
     }
