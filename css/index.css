@@ -1,3 +1,4 @@
+/*DIV -CONTENEDOR*/
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -13,6 +14,7 @@ div > div {
   margin-bottom: 10px;
 }
 
+/*DIV-CONTENEDOR-1/2/3*/
 .contenedor-1,
 .contenedor-3{
   background-color: #D13B1540;
@@ -20,24 +22,6 @@ div > div {
 
 .contenedor-2{
   background-color: #06507640;
-}
-
-.boton {
-    background-color: #0077a5;
-    color: white; 
-    font-size: 15px;
-    font-weight: bold; 
-    padding: 15px 30px; 
-    border: none; 
-    border-radius: 20px; 
-    cursor: pointer;
-    text-align: center; 
-    display: block;    
-    margin: 30px auto;
-}
-
-.boton:hover {
-    background-color: #00357B;
 }
 
 .contenedor-1,
@@ -50,6 +34,17 @@ div > div {
   padding: 20px;
   width: 100%;
 }
+
+.contenedor-1 .descripcion,
+.contenedor-2 .descripcion,
+.contenedor-3 .descripcion {
+  max-width: 700px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*DIVS-INTERIORES*/
 
 .Oasis-de-los-sueños,
 .Reino-del-mañana,
@@ -81,15 +76,7 @@ div > div {
   border-radius: 10px;
 }
 
-.contenedor-1 .descripcion,
-.contenedor-2 .descripcion,
-.contenedor-3 .descripcion {
-  max-width: 700px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
+/*PERSONAJES*/
 .Personaje-1,
 .Personaje-2,
 .Personaje-3 {
@@ -104,30 +91,48 @@ div > div {
   scale: 1.5;
 }
 
+
+/*BOTON*/
+.boton {
+  background-color: #0077a5;
+  color: white; 
+  font-size: 15px;
+  font-weight: bold; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer;
+  text-align: center; 
+  display: block;    
+  margin: 30px auto;
+}
+
+.boton:hover {
+  background-color: #00357B;
+}
+
+/*MAPA*/
 .mapa {
-    width: 600px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 30px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px;
 }
 
 .mapa img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
 }
 
-h2{
-  text-align: center;
-}
-
-.Logo{
+/*LOGO*/
+.Logo-Disney{
   transform: scale(2);
   display: block;
   margin: auto;
@@ -139,36 +144,51 @@ p{
   padding: 1px;
 }
 
+h2{
+  text-align: center;
+}
+/*DIV-PRECIOS*/
 .precios {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 1px 1px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 1px 1px;
+  flex-wrap: wrap;
 }
 
+.precios > div {
+  margin: 0;
+}
+
+/*DIV-TARJETA*/
 .tarjeta {
-    background-color: #f0f0f0;
-    padding: 30px;
-    border-radius: 15px;
-    width: 350px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tarjeta h4{
   padding: 0;
-    margin: 0;
+  margin: 0;
 }
 
 .tarjeta h3 {
-    text-align: center;
-    margin-bottom: 1px;
-    font-size: 25px;
-    margin-top: 5px;
+  text-align: center;
+  margin-bottom: 1px;
+  font-size: 25px;
+  margin-top: 5px;
+  order: -1;
+}
+
+.tarjeta .img {
+  order: 0;
+  scale: 1.5;
 }
 
 .tarjeta h2{
@@ -177,19 +197,17 @@ p{
 }
 
 .tarjeta ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .tarjeta li {
-    margin-bottom: 10px;
-    line-height: 1.4;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
-.precios > div {
-  margin: 0;
-}
+/*DIV-BUSCADOR*/
 
 .contenedor-buscador {
   position: relative;
@@ -203,7 +221,7 @@ p{
   border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   font-family: sans-serif;
@@ -294,6 +312,88 @@ p{
   border-radius: 4px;
 }
 
+/*MAIN*/
 main{
-  padding: 10px;
+  padding: 1px;
+}
+
+/*VIDEO*/
+video {
+  margin-top: 0 !important;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /*VIDEO*/
+  video {
+    width: 100%;
+    height: auto;
+  }
+  /*MAPA*/
+  .mapa {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mapa img {
+    width: 100%;
+    height: auto;
+  }
+  /*DIV-PRECIOS*/
+  .precios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+
+  /*DIV-BUSCADOR*/
+  .buscador {
+    gap: 5px;
+  }
+
+  .select,
+  .fecha,
+  .boton-principal,
+  .input-num {
+    font-size: 12px;
+    height: 30px;
+    padding: 4px;
+  }
+
+  .input-num input.contador {
+    width: 30px;
+  }
+
+  /*DIV-CONTENEDOR*/
+  .contenedor-1,
+  .contenedor-2,
+  .contenedor-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Oasis-de-los-sueños,
+  .Reino-del-mañana,
+  .Tierra-de-leyendas {
+    order: 1;
+  }
+
+  .descripcion {
+    order: 2;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .Personaje-1,
+  .Personaje-2,
+  .Personaje-3 {
+    order: 3;
+    margin-top: 10px;
+  }
 }
