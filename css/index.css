@@ -384,6 +384,13 @@ video {
     order: 1;
   }
 
+  .Oasis-de-los-sueños img,
+  .Reino-del-mañana img,
+  .Tierra-de-leyendas img {
+    max-width: 650px;
+    height: 250px;
+  }
+
   .descripcion {
     order: 2;
     margin-top: 20px;
