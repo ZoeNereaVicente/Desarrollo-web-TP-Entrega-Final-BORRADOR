@@ -157,6 +157,11 @@ h1{
     position: relative;
   }
 
+  /*MAIN*/
+  main {
+  transition: transform 0.3s ease-in-out;
+  }
+  
   /*FOOTER*/
   footer {
     display: flex;
@@ -187,14 +192,14 @@ h1{
     margin: 3px 0;
   }
 
-  /*MENU CELULAR*/
+   /*MENU CELULAR*/
   .mobile-menu {
     display: none;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: white;
+    background: linear-gradient(to right, #004AAD, #5DE0E6);
     text-align: center;
   }
 
@@ -208,7 +213,7 @@ h1{
   }
 
   .mobile-menu a {
-    color: #004AAD;
+    color: white;
     text-decoration: none;
     font-size: 18px;
   }
@@ -223,6 +228,14 @@ h1{
 
   .mobile-menu.active {
     display: block;
+  }
+
+  body.menu-open {
+  transform: translateY(1px);
+  }
+
+  .menu-open main {
+  transform: translateY(200px);
   }
 
   /*MENU COMPUTADORA*/
