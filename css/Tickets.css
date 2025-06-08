@@ -17,6 +17,11 @@
     background-color: #00357B;
 }
 
+.cancelacion-tickets .boton {
+    width: fit-content; 
+    margin: 20px auto;
+}
+
 /*MAIN*/
 main {
     padding: 40px;
@@ -35,8 +40,8 @@ main {
 
 .foto img {
    max-width: 300px;
-    display: block;
-    margin-bottom: 10px;
+   display: block;
+   margin-bottom: 10px;
 }
 
 .izquierda, .derecha {
@@ -92,6 +97,9 @@ main {
 
 .cancelacion-tickets {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cancelacion-tickets h2,
@@ -105,10 +113,10 @@ main {
 @media (max-width: 768px) {
     /*DIV-TICKETS*/
     .derecha {
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-      max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        max-width: 100%;
     }
 
     .derecha > div:first-child img {
