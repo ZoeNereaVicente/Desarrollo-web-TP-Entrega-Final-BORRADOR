@@ -1,5 +1,5 @@
 /*LOGO*/
-.Logo{
+.Logo-Disney{
     transform: scale(2);
     display: block;
     margin: auto;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 600px) {
     /*LOGO*/
-    .Logo {
+    .Logo-Disney {
         transform: scale(1.2); 
         padding: 10px;
     }
