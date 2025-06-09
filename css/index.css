@@ -319,7 +319,7 @@ main{
 
 /*VIDEO*/
 video {
-  margin-top: 0 !important;
+  margin-top: 10px !important;
   display: block;
   max-width: 100%;
   height: auto;
@@ -331,6 +331,11 @@ video {
     width: 100%;
     height: auto;
   }
+
+  .menu-open video{
+    transform: translateY(25px);
+  }
+
   /*MAPA*/
   .mapa {
     width: 100%;
@@ -360,13 +365,17 @@ video {
   .fecha,
   .boton-principal,
   .input-num {
-    font-size: 12px;
-    height: 30px;
+    font-size: 8px;
+    height: 20px;
     padding: 4px;
   }
 
   .input-num input.contador {
-    width: 30px;
+    width: 20px;
+  }
+
+  .menu-open .buscador{
+    transform: translateY(20px);
   }
 
   /*DIV-CONTENEDOR*/
