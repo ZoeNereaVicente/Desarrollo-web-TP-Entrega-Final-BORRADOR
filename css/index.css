@@ -1,4 +1,13 @@
-/*DIV -CONTENEDOR*/
+p{
+  text-align: center;
+  padding: 1px;
+}
+
+h2{
+  text-align: center;
+}
+
+/*DIV - CONTENEDOR*/
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -14,7 +23,7 @@ div > div {
   margin-bottom: 10px;
 }
 
-/*DIV-CONTENEDOR-1/2/3*/
+/*DIV-CONTENEDORES-1/2/3*/
 .contenedor-1,
 .contenedor-3{
   background-color: #D13B1540;
@@ -139,14 +148,6 @@ div > div {
   padding: 10px;
 }
 
-p{
-  text-align: center;
-  padding: 1px;
-}
-
-h2{
-  text-align: center;
-}
 /*DIV-PRECIOS*/
 .precios {
   display: flex;
