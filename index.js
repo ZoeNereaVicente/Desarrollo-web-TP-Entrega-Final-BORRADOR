@@ -10,3 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   document.body.classList.toggle("menu-open");
 });
+
+document.querySelector(".navbar").addEventListener("click", function () {
+  document.querySelector("footer").style.marginTop = "60px";
+});
