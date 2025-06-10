@@ -193,8 +193,8 @@ h1{
     margin: 3px 0;
   }
 
-  .nav-activo footer {
-    transform: translateY(60px); 
+  .menu-open footer {
+    transform: translateY(200px); 
   }
 
   /*MENU CELULAR*/
