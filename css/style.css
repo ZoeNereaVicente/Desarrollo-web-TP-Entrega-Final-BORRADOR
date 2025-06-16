@@ -77,31 +77,6 @@ nav ul{
   padding: 0;
 }
 
-/*CARRITO*/
-.carrito-btn {
-  background-color: white;
-  color: #004AAD;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 90px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.carrito-btn i {
-  font-size: 20px;
-}
-
-.carrito-btn span {
-  font-size: 16px;
-  font-weight: bold;
-}
-
 /*MENU COMPUTADORA*/
 .desktop-menu {
   flex:1 ;
@@ -122,6 +97,111 @@ nav ul{
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
+}
+
+/*CARRITO*/
+.carrito-toggle {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 90px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+}
+
+.carrito-panel {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  max-width: 90vw;
+  background: linear-gradient(to bottom right, #0c0b77, #a925c7);
+  color: white;
+  border-radius: 40% 0 40% 0;
+  padding: 20px;
+  z-index: 999;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.carrito-panel h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.carrito-panel ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.carrito-panel li {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.carrito{
+  text-align: right;
+}
+
+.carrito-panel hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 15px 0;
+}
+
+.carrito-panel h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.carrito-panel .añadir {
+  background-color: limegreen;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.acciones-carrito {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.acciones-carrito .pagar {
+  background-color: #004AAD;
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.acciones-carrito .vaciar {
+  background-color: #c12d2d;
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.oculto {
+  display: none;
 }
 
 /*OTROS*/
@@ -253,16 +333,5 @@ h1{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .carrito-btn {
-    padding: 5px 10px; 
-    font-size: 12px; 
-    border-radius: 50px;
-    gap: 3px; 
-  }
-
-  .carrito-btn i {
-    font-size: 16px; 
   }
 }
