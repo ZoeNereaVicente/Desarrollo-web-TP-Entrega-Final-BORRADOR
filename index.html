@@ -34,10 +34,25 @@
                 <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
             </ul>
         </nav>
-        <button class="carrito-btn" onclick="agregarAlCarrito()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="contador">0</span>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
         </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
     </header>
     <main>
         <div class="buscador">
@@ -68,7 +83,7 @@
         </div>
         <div>
             <video width="1400" height="1100" controls style="display: block; margin: 0 auto;">
-                <source src="./img/Video-inicio.mp4" type="video/mp4">
+                <source src="img/Video-inicio.mp4" type="video/mp4">
             </video>
         </div>
         <div>
