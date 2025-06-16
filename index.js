@@ -14,3 +14,8 @@ document.querySelector(".menu-toggle").addEventListener("click", function () {
 document.querySelector(".navbar").addEventListener("click", function () {
   document.querySelector("footer").style.marginTop = "60px";
 });
+
+function toggleCarrito() {
+  const panel = document.getElementById("carrito-panel");
+  panel.classList.toggle("oculto");
+}
