@@ -36,3 +36,5 @@ const btnBuscar = document.getElementById('buscar-precios');
       window.location.href = "Tickets.html";
     });
   }
+
+

@@ -78,3 +78,25 @@ document.getElementById("btn-siguiente").addEventListener("click", () => {
 
 // Generar calendario inicial
 generarCalendario(mesActual, anioActual);
+
+// funcion para aceptar o denegar una oferta 
+function aceptarOferta() {
+  const oferta = document.getElementById("oferta");
+  if (oferta) {
+    oferta.classList.remove("oculto");
+    oferta.classList.add("visible");
+  }
+}
+
+// Selección de un solo día activo
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("activo")) {
+    // Desmarcar cualquier otro día previamente seleccionado
+    document.querySelectorAll(".activo.seleccionado").forEach(el => {
+      el.classList.remove("seleccionado");
+    });
+
+    // Marcar el día clickeado
+    e.target.classList.add("seleccionado");
+  }
+});
